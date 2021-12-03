@@ -23,6 +23,10 @@ const routes: Routes = [
     path: 'sucursales',
     loadChildren: () => import('./sucursales/sucursales.module').then( m => m.SucursalesPageModule)
   },
+  {
+    path: 'modal-popover',
+    loadChildren: () => import('./componentes/modal-popover/modal-popover.module').then( m => m.ModalPopoverPageModule)
+  },
 ];
 
 @NgModule({
