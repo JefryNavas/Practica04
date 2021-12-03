@@ -9,6 +9,7 @@ import { ActionSheetController } from '@ionic/angular';
 export class ModalPopoverPage implements OnInit {
 
   @Input() nombre: string;
+  @Input() precio: string;
   @Input() description: string;
   @Input() img: string;
 

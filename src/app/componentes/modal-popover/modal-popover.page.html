@@ -9,14 +9,17 @@
         <img src='{{img}}' alt="">
         <ion-card-header>
             <ion-card-title>{{nombre}}</ion-card-title>
-            <ion-card-subtitle>Celulares</ion-card-subtitle>
+            <h5>{{precio}}</h5>
         </ion-card-header>
 
         <ion-card-content>
             {{description}}
         </ion-card-content>
     </ion-card>
+    <div align="center">
+        <ion-button (click)="presentActionSheet()">Opciones</ion-button>
+        <ion-button (click)="closeModel()">Cerrar</ion-button>
 
-    <ion-button (click)="presentActionSheet()">Opciones</ion-button>
-    <ion-button (click)="closeModel()">Cerrar</ion-button>
+    </div>
+
 </ion-content>
