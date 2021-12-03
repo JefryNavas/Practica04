@@ -1,24 +1,32 @@
 <ion-header [translucent]="true">
     <ion-toolbar color="primary">
-        <ion-title>
-            INICIO
-        </ion-title>
+        <div class="ion-text-justify">
+            <ion-title>
+                INICIO
+            </ion-title>
+        </div>
+
+        <ion-buttons slot="start">
+            <ion-menu-button menu="main-menu"></ion-menu-button>
+        </ion-buttons>
     </ion-toolbar>
 </ion-header>
 
+
 <ion-content [fullscreen]="true">
-    <ion-list>
-        <ion-item>
-            <ion-label routerLink="/catalogo">Catálogo</ion-label>
-        </ion-item>
-        <ion-item>
-            <ion-label routerLink="/sucursales">Sucursales</ion-label>
-        </ion-item>
-        <ion-item>
-            <ion-label routerLink="/somos">Quiénes Somos</ion-label>
-        </ion-item>
-    </ion-list>
+    <div class="ion-text-center">
+        <ion-text color="secondary">
+            <h2>Bienvenid@ a: </h2>
+        </ion-text>
+    </div>
+    <div class="ion-text-center">
+        <img src="../../assets/testimg/logo.png" alt="">
+    </div>
+
+
+
 </ion-content>
+
 
 <ion-footer>
     <ion-toolbar>

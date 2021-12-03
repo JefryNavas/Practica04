@@ -8,6 +8,7 @@ import { SomosPageRoutingModule } from './somos-routing.module';
 
 import { SomosPage } from './somos.page';
 
+
 @NgModule({
   imports: [
     CommonModule,

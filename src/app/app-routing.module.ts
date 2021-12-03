@@ -13,7 +13,7 @@ const routes: Routes = [
   },
   {
     path: 'somos',
-    loadChildren: () => import('./somos/somos.module').then( m => m.SomosPageModule)
+    loadChildren: () => import('./about/somos.module').then( m => m.SomosPageModule)
   },
   {
     path: 'catalogo',

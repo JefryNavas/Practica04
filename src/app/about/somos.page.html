@@ -1,0 +1,43 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Quiénes Somos</ion-title>
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-slides pager="ios" class="slide-full">
+
+        <ion-slide *ngFor="let slide of slides">
+
+            <ion-card mode="ios">
+                <img [src]="slide.img" class="slide-image" />
+
+                <ion-card-header>
+                    <ion-card-title>{{ slide.titulo }}</ion-card-title>
+                </ion-card-header>
+
+                <ion-card-content>
+                    {{ slide.desc }}
+                </ion-card-content>
+
+            </ion-card>
+
+        </ion-slide>
+
+
+
+
+    </ion-slides>
+
+
+</ion-content>
+
+<ion-footer>
+    <ion-toolbar>
+        <ion-title size="small">&copy; Autores: Jefry Navas, Edwin Hernández</ion-title>
+    </ion-toolbar>
+</ion-footer>
